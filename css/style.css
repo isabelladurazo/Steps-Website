@@ -13,51 +13,17 @@
 
 
 
-
-
-
-
-
-
 /* Fonts  */
 
-/* BC Mikser */
-/* 
-@font-face {
-font-family: "bc-mikser", sans-serif;
-font-weight: 700;
-font-style: normal;
-}
 
 @font-face {
-font-family: "bc-mikser", sans-serif;
-font-weight: 400;
-font-style: normal;
-} */
-
-/* Basteleur */
-
-/* @font-face {
-    font-family: "Basteleur-Bold", serif;
-    src: url("fonts/Basteleur-Bold.woff2") format('woff2'),
-         url("fonts/Basteleur-Bold.woff") format('woff'),
-
-}
-@font-face {
-    font-family: "Basteleur-Moonlight", serif;
-    src: url("fonts/Basteleur-Moonlight.woff2") format('woff2'),
-         url("fonts/Basteleur-Moonlight.woff") format('woff'),
-
-} */
-
-@font-face {
-    font-family: 'Basteleur-Bold';
+    font-family: "Basteleur-Bold";
     src: url('fonts/Basteleur-Bold.woff2') format('woff2'), /* Super Modern Browsers */
         url('fonts/Basteleur-Bold.woff') format('woff'); /* Pretty Modern Browsers */
   }
 
   @font-face {
-    font-family: 'Basteleur-Moonlight';
+    font-family: "Basteleur-Moonlight";
     src: url('fonts/Basteleur-Moonlight.woff') format('woff2'), /* Super Modern Browsers */
          url('fonts/Basteleur-Moonlight.woff') format('woff'); /* Pretty Modern Browsers */
   }
@@ -69,8 +35,8 @@ font-style: normal;
 @media (max-width: 600px) {
 
     h1{
-	    font-family: 'Basteleur-Bold', serif;
-	    font-size: 60pt;
+	    font-family: "Basteleur-Bold", serif;
+	    font-size: 50pt;
         margin-top: 50px;
         margin-bottom: 40px;
         margin-left: 100px;
@@ -84,7 +50,7 @@ font-style: normal;
 @media (min-width: 601px) and (max-width: 1023px) {
     
     h1{
-        font-family: 'Basteleur-Bold', serif;
+        font-family: "Basteleur-Bold", serif;
         font-size: 80pt;
         margin-top: 50px;
         margin-bottom: 40px;
@@ -100,7 +66,7 @@ font-style: normal;
 @media (min-width: 1024px) {
 
     h1{
-        font-family: 'Basteleur-Bold', serif;
+        font-family: "Basteleur-Bold", serif;
         font-size: 100pt;
         margin-top: 50px;
         margin-bottom: 40px;
@@ -162,7 +128,7 @@ p {
 .subpage .subpageButton {
     display: inline-block; 
     font-size: 13pt;
-    font-family: Basteleur-Bold, serif;
+    font-family: "Basteleur-Bold", serif;
     color: rgb(27, 27, 27);
     text-decoration: none;
     border: none;
@@ -234,7 +200,7 @@ p {
 .homeMenu button {
     display: block;
     font-size: 80pt;
-    font-family: Basteleur-Bold, serif;
+    font-family: "Basteleur-Bold", serif;
     color: rgb(27, 27, 27);
     text-decoration: none;
     text-align: center;
@@ -283,7 +249,7 @@ p {
 
 .move-name {
     text-align: center;
-    font-family: Basteleur-Moonlight, serif;
+    font-family: "Basteleur-Moonlight", serif;
     font-weight: 100;
     font-size: 10pt;
     margin-top: 70px;
@@ -308,6 +274,9 @@ p {
         margin-top: 50px;
         margin-bottom: 10px;
     }
+    .gif-container .gif{
+        width: 30%;
+    }
 }
 
 /* Style for screens between 601px and 1023px */
@@ -317,6 +286,9 @@ p {
         margin-top: 60px;
         margin-bottom: 12px;
     }
+    .gif-container .gif{
+        width: 30%;
+    }
 }
 
 /* Style for screens larger than 1023px */
@@ -325,6 +297,9 @@ p {
         font-size: 10pt;
         margin-top: 70px;
         margin-bottom: 15px;
+    }
+    .gif-container .gif{
+        width: 20%;
     }
 }
 
@@ -371,6 +346,27 @@ p {
 /* CSS for The Resources Page */
 
 
+/* Image Links to Studio Websites */
+
+/* CSS for hover effect */
+
+.image-anchor {
+    display: block; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.studio-photo {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* Scaling transitions */
+}
+
+.image-anchor:hover .studio-photo {
+    transform: scale(1.1); 
+}
+
+
 h2 {
     font-family: "Basteleur-Bold", serif;
     font-size: 30pt;
@@ -407,7 +403,7 @@ h2 {
 
 .resources-location {
     text-align: center;
-    font-family: Basteleur-Moonlight, serif;
+    font-family: "Basteleur-Moonlight", serif;
     font-weight: 100;
     font-size: 10pt;
     margin-top: 15px;
@@ -555,7 +551,7 @@ h3 {
     background-color: #fd29bb;
     color: white;
     padding: 10px; /* Add padding to the overlay */
-    font-family: Basteleur-Bold;
+    font-family: "Basteleur-Bold", serif;
     font-size: 14pt;
     text-align: center;
     opacity: 0;
@@ -582,7 +578,7 @@ h3 {
 
 .definition-of-hiphop {
     text-align: left;
-    font-family: Basteleur-Moonlight, serif;
+    font-family: "Basteleur-Moonlight", serif;
     font-weight: 100;
     font-size: 11pt;
     padding-left: 300px;
