@@ -15,19 +15,23 @@
 
 /* Fonts  */
 
+/* Downloaded woff files from https://velvetyne.fr/fonts/basteleur/ */
 
 @font-face {
-    font-family: "Basteleur-Bold";
-    src: url('fonts/Basteleur-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-        url('fonts/Basteleur-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+    font-family: 'Basteleur-Bold';
+    src: url('fonts/Basteleur-Bold.woff2') format('woff2'), 
+        url('fonts/Basteleur-Bold.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
   }
 
   @font-face {
     font-family: "Basteleur-Moonlight";
-    src: url('fonts/Basteleur-Moonlight.woff') format('woff2'), /* Super Modern Browsers */
-         url('fonts/Basteleur-Moonlight.woff') format('woff'); /* Pretty Modern Browsers */
+    src: url('fonts/Basteleur-Moonlight.woff') format('woff2'), 
+         url('fonts/Basteleur-Moonlight.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
   }
-
 
 
 /* Header Breakpoints */
@@ -348,7 +352,7 @@ p {
 
 /* Image Links to Studio Websites */
 
-/* CSS for hover effect */
+/* Image size changes when hover effect */
 
 .image-anchor {
     display: block; 
@@ -515,9 +519,10 @@ h3 {
 }
 
 
+
+
+
 /* CSS for The Music Page */
-
-
 
 .image-gallery {
     display: flex;
@@ -545,22 +550,22 @@ h3 {
 
 .overlay {
     position: absolute;
-    top: 50%; /* Center the overlay vertically */
-    left: 50%; /* Center the overlay horizontally */
-    transform: translate(-50%, -50%); /* Center the overlay precisely */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     background-color: #fd29bb;
     color: white;
-    padding: 10px; /* Add padding to the overlay */
+    padding: 10px; 
     font-family: "Basteleur-Bold", serif;
     font-size: 14pt;
     text-align: center;
     opacity: 0;
-    transition: opacity 0.3s; /* Apply transition to overlay opacity */
+    transition: opacity 0.3s; /* Transition for overlay */
 }
 
 .image-container:hover .overlay {
-    opacity: 1; /* Show overlay on hover */
-    transition: opacity 0.3s; /* Apply transition to overlay opacity */
+    opacity: 1; /* Show overlay when hover */
+    transition: opacity 0.3s; /* Transition for overlay */
 }
 
 
@@ -584,6 +589,8 @@ h3 {
     padding-left: 300px;
     padding-right: 300px; 
 }
+
+/* Spacing between paragraphs */
 
 .definition-of-hiphop br{
     margin-bottom: 30px;
